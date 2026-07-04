@@ -104,14 +104,14 @@ export default function Home(){
         </span>
       </motion.h1>
 
-      <motion.p className="mt-2 text-lg lg:text-base md:text-lg text-gray-300 max-w-8xl mx-auto lg:mx-1"
+      <motion.p className="mt-2 text-lg lg:text-base md:text-lg text-gray-300 max-w-7xl mx-auto lg:mx-1"
       initial={{opacity:0 , y:20}}
       animate={{opacity:1 , y:0}}
       transition={{delay:0.4 , duration:0.8}}
       >
-      Computer Science Graduate | AI & ML Enthusiast
-      Building AI-driven solutions with Python, Machine Learning, 
-      and Data Science to solve real-world challenges.
+      Working at the intersection of Computer Vision, Machine Learning, and Data Science 
+      to build AI solutions that are accurate, scalable, and practical. Always exploring 
+      better ways to transform ideas into intelligent applications.
       </motion.p>
 
       <motion.div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-6"
