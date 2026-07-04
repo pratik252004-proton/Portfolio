@@ -113,7 +113,7 @@ This project is open source and available for personal reference. Feel free to f
 
 **Pratik**
 GitHub: [@pratik252004-proton](https://github.com/pratik252004-proton)
-Portfolio: [portfoilo-jade-ten.vercel.app](www.pratikm.online)
+Portfolio: [www.pratikm.online](www.pratikm.online)
 
 ---
 
