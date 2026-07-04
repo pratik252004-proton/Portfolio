@@ -13,7 +13,25 @@ export default function About(){
     "top-5 -left-10 w-[250px] h-[250px] opacity-15 blur-[120px]",
     "bottom-0 right-10 w-[250px] h-[250px] opacity-15 blur-[140px] delay-300",
     "top-1/2 left-[40%] -translate-x1/2 -translate-y-1/2 w-[180px] h-[180px] opacity-10 blur-[100px]",
-  ]
+  ];
+  const aboutPoints = [
+  {
+    title: "AI Products",
+    desc: "Turning ideas into intelligent AI-powered products."
+  },
+  {
+    title: "Machine Learning",
+    desc: "Building Computer Vision and Data Science solutions for real-world challenges."
+  },
+  {
+    title: "End-to-End Development",
+    desc: "Creating complete AI systems from data collection to deployment."
+  },
+  {
+    title: "Continuous Learning",
+    desc: "Exploring new technologies and pushing the boundaries of AI."
+  }
+];
   return(
     <section id="about"
     className="min-h-screen w-full flex item-center justify-center relative bg-black text-white overflow-hidden">
@@ -48,15 +66,40 @@ export default function About(){
             <p className="mt-2 text-lg sm:text-xl text-white/90 font-semibold">
               AI-ML Engineer
             </p>
-            <p className="mt-2 text-gray-300 leading-relaxed text-base sm:text-l max-w-4xl md:max-w3xl">
-            Computer Science graduate with a strong foundation in
-            Artificial Intelligence, Machine Learning, and Data Science. Experienced in
-            developing predictive models, data preprocessing, and exploratory data
-            analysis using Python, Scikit-learn, Pandas, and NumPy. Passionate about
-            solving real-world problems through AI and seeking an entry-level AI/ML
-            role to contribute technical expertise while continuously learning and
-            growing in the field.
-            </p>
+           <div className="mt-5 w-full max-w-4xl space-y-6">
+  {aboutPoints.map((item, index) => (
+    <motion.div
+      key={index}
+      className="flex items-start gap-4"
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ delay: index * 0.15 }}
+      viewport={{ once: true }}
+    >
+      <motion.div
+        className="relative flex h-6 w-6 shrink-0 items-center justify-center mt-1"
+        animate={{ rotate: 360 }}
+        transition={{
+          repeat: Infinity,
+          duration: 6,
+          ease: "linear",
+        }}
+      >
+        <div className="absolute h-4 w-4 rotate-45 border-2 border-cyan-400 rounded-[3px]" />
+        <div className="absolute h-2 w-2 rounded-full bg-cyan-400 shadow-[0_0_10px_#22d3ee]" />
+      </motion.div>
+
+      <div className="flex-1">
+        <h4 className="text-base sm:text-lg font-semibold text-cyan-300">
+          {item.title}
+        </h4>
+        <p className="mt-1 text-sm sm:text-base lg:text-lg text-gray-300 leading-7">
+          {item.desc}
+        </p>
+      </div>
+    </motion.div>
+  ))}
+</div>
             <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 sm:gap-4 max-w-xl">
               {stats.map((item , i) => (
                 <motion.div key={i} className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-center"
