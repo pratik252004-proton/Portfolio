@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Profile from "../assets/Profile.png"
+import Profile from "../assets/Pro.png"
 import ParticlesBackground from "../components/ParticlesBackground";
 
 export default function About(){
