@@ -50,7 +50,7 @@ export default function About(){
         transition={{duration:0.6}}
         viewport={{once:true , amount:0.4}}
         >
-          <motion.div className="relative w-[180px] h-[180px] md:w-[250px] md:h-[250px]
+          <motion.div className="relative w-[180px] h-[170px] md:w-[250px] md:h-[240px]
           rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#1cd8d2]/20 to-[#302b63]/20 border border-[#1cd8d2]/25"
           whileHover={{scale:1.02}}
           transition={{type:"spring" , stiffness:200 , damping:20}}
