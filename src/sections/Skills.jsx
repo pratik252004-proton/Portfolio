@@ -6,6 +6,12 @@ import { SiPandas } from "react-icons/si";
 import { SiNumpy } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { SiJupyter } from "react-icons/si";
+import { SiCplusplus } from "react-icons/si";
+import { SiOpencv } from "react-icons/si";
+import { SiArduino } from "react-icons/si";
+import { SiTensorflow } from "react-icons/si";
+import { FaWifi } from "react-icons/fa";
+import { HiChartBar } from "react-icons/hi2";
 import { motion, useMotionValue } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import ParticlesBackground from "../components/ParticlesBackground";
@@ -21,6 +27,12 @@ export default function Skills(){
         { icon: <SiMysql />, name: "MySQL"},
         { icon: <SiMongodb />, name: "MongoDB"},
         { icon: <FaGithub />, name: "Github"},
+        { icon: <SiCplusplus />, name: "C++"},
+        { icon: <SiOpencv />, name: "OpenCV"},
+        { icon: <SiArduino />, name: "Arduino"},
+        { icon: <SiTensorflow />, name: "TensorFlow"},
+        { icon: <FaWifi />, name: "IOT"},
+        { icon: <HiChartBar />, name: "Matplotlib"},
     ];
     const repeated = [...skills , ...skills]
 
