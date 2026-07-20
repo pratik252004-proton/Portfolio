@@ -207,7 +207,7 @@ export default function AwardsCertification() {
                   </p>
 
                   <h3 className="text-4xl font-bold text-white mt-3">
-                    1st Winner Smart India Hackthon Award
+                    1st Winner Smart India Hackathon Award
                   </h3>
 
                   <p className="text-gray-400 mt-5">
