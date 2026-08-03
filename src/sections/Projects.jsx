@@ -39,7 +39,7 @@ export default function Projects(){
       {
         title: "PharmaPulse",
         link: "https://client-complaint-management-system.vercel.app/",
-        bgColor: "#31465F",
+        bgColor: "#1A1B4B",
         image: isMobile ? Complaint : Customer_Complaint,
       },
       {
