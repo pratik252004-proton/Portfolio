@@ -37,7 +37,7 @@ export default function Projects(){
         image: isMobile ? PlanktonApp : PlanktonWeb,
       },
       {
-        title: "PharmaPluse",
+        title: "PharmaPulse",
         link: "https://client-complaint-management-system.vercel.app/",
         bgColor: "#31465F",
         image: isMobile ? Complaint : Customer_Complaint,
