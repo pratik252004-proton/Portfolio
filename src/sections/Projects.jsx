@@ -6,6 +6,8 @@ import BeltWeb from "../assets/BeltWeb.png"
 import PlanktonApp from "../assets/PlanktonApp.png"
 import AeroFlameApp from "../assets/AeroFlameApp.png"
 import BeltApp from "../assets/BeltApp.png"
+import Customer_Complaint from "../assets/Customer_Complaint.png"
+import Complaint from "../assets/Complaint.png"
 import { useScroll, useMotionValueEvent, AnimatePresence, motion } from "framer-motion"
 
 const useIsMobile = (query = "(max-width: 639px)") => {
@@ -33,6 +35,12 @@ export default function Projects(){
         link: "https://drive.google.com/drive/folders/1TrNs_BFOEv8Et7l1GC6l8OlgjIARiuIW?usp=drive_link",
         bgColor: "#31465F",
         image: isMobile ? PlanktonApp : PlanktonWeb,
+      },
+      {
+        title: "PharmaPluse",
+        link: "https://client-complaint-management-system.vercel.app/",
+        bgColor: "#31465F",
+        image: isMobile ? Complaint : Customer_Complaint,
       },
       {
         title: "Aero-Flame",
